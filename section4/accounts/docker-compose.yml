@@ -9,7 +9,7 @@ services:
         limits:
           memory: 700m
     networks:
-      - eazybank
+      - frith
   loans:
     image: "eazybytes/loans:s4"
     container_name: loans-ms
@@ -20,7 +20,7 @@ services:
         limits:
           memory: 700m
     networks:
-      - eazybank
+      - frith
   cards:
     image: "eazybytes/cards:s4"
     container_name: cards-ms
@@ -31,7 +31,7 @@ services:
         limits:
           memory: 700m
     networks:
-      - eazybank
+      - frith
 networks:
-  eazybank:
+  frith:
     driver: "bridge"
